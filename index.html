@@ -1,84 +1,46 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang = "en">
 
 <head>
-    
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+
+    <meta charset = "UTF-8">
     <title>Notes App</title>
+    <link rel = "stylesheet" href = "styles.css">
 
 </head>
 
 <body>
 
-<div class="container">
-    <div class="notes-container">
-        <ul class="notes-list">
-            <li>
-                <div class="note-title">Note title</div>
-                <div class="note-text">
-                    <span class="date">Сегодня, 17:20</span>
-                    <span class="text">text</span>
-                </div>
-                <button>Remove</button>
-            </li>
-            
-            <li>
-                <div class="note-title">Note title</div>
-                <div class="note-text">
-                    <span class="date">Сегодня, 17:20</span>
-                    <span class="text">text</span>
-                </div>
-                <button>Remove</button>
-            </li>
-            
-            <li>
-                <div class="note-title">Note title</div>
-                <div class="note-text">
-                    <span class="date">Сегодня, 17:20</span>
-                    <span class="text">text</span>
-                </div>
-                <button>Remove</button>
-            </li>
-            
-            <li>
-                <div class="note-title">Note title</div>
-                <div class="note-text">
-                    <span class="date">Сегодня, 17:20</span>
-                    <span class="text">text</span>
-                </div>
-                <button>Remove</button>
-            </li>
-            
-            <li>
-                <div class="note-title">Note title</div>
-                <div class="note-text">
-                    <span class="date">Сегодня, 17:20</span>
-                    <span class="text">text</span>
-                </div>
-                <button>Remove</button>
-            </li>
-            
-            <li>
-                <div class="note-title">Note title</div>
-                <div class="note-text">
-                    <span class="date">Сегодня, 17:20</span>
-                    <span class="text">text</span>
-                </div>
-                <button>Remove</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="note-view">
-        <input id="note-title" type="text" />
-        <button class="add-btn">Add</button>
-        <textarea class="note-text"></textarea>
-    </div>
-</div>
+    <div class = "container">
 
-<script src="script.js"></script>
+        <div class = "notes-container">
+
+            <button id = "add-btn">New Note</button>
+            
+            <ul class = "notes-list" id = "notes-list">
+            </ul>
+
+        </div>
+        
+        <div class="note-view">
+
+            <input class = "note-title" id = "note-title" type = "text" placeholder = "Title"/>
+            
+            <div class = "note-bar">
+
+                <div class = "note-date" id = "note-date"></div>
+                <button id = "save-btn">Save</button>
+
+            </div>
+            
+            <textarea class = "note-text" id = "note-text" placeholder = "Text"></textarea>
+        
+        </div>
+
+    </div>
+
+    <script src = "script.js"></script>
 
 </body>
 
